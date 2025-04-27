@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/styles.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="game-title">Tic-Tac-Toe</h1>
+      <hr />
+    </header>
+
+    <div class="game-area">
+      <section class="player player--0 player--active">
+        <h3 class="player-0-title">Player 1</h3>
+        <p class="current-score-title">🎮Your current score:</p>
+        <div class="player-0-current-score">0</div>
+        <p class="high-score-title">💯Your high score:</p>
+        <div class="player-0-high-score">0</div>
+      </section>
+      <div class="board-area">
+        <section class="game-board">
+          <button class="TicTacToe-board-piece" id="row-1-box-1"></button>
+          <button class="TicTacToe-board-piece" id="row-1-box-2"></button>
+          <button class="TicTacToe-board-piece" id="row-1-box-3"></button>
+          <button class="TicTacToe-board-piece" id="row-2-box-1"></button>
+          <button class="TicTacToe-board-piece" id="row-2-box-2"></button>
+          <button class="TicTacToe-board-piece" id="row-2-box-3"></button>
+          <button class="TicTacToe-board-piece" id="row-3-box-1"></button>
+          <button class="TicTacToe-board-piece" id="row-3-box-2"></button>
+          <button class="TicTacToe-board-piece" id="row-3-box-3"></button>
+        </section>
+        <section class="restart-game">
+          <button class="restart-game-btn">Restart Game</button>
+        </section>
+      </div>
+
+      <section class="player player--1">
+        <h3 class="player-1-title">Player 2</h3>
+        <p class="current-score-title">🎮Your current score:</p>
+        <div class="player-1-current-score">0</div>
+        <p class="high-score-title">💯Your high score:</p>
+        <div class="player-1-high-score">0</div>
+      </section>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
