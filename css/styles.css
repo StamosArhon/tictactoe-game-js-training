@@ -133,7 +133,8 @@ h3 {
   justify-content: center;
 }
 
-.restart-game-btn {
+.restart-game-btn,
+.reset-board-btn {
   border: none;
   display: flex;
   width: 8vw;
@@ -148,13 +149,14 @@ h3 {
   cursor: pointer;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
   user-select: none;
-  font-size: 30px;
+  font-size: 20px;
   font-family: Tahoma;
   font-weight: 700;
   color: white;
 }
 
-.restart-game-btn:active {
+.restart-game-btn:active,
+.reset-board-btn:active {
   transform: translateX(4px);
   box-shadow: 8px 0px 0px 0px #db284c;
 }

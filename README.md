@@ -1,6 +1,6 @@
 # The TicTacToe Game (HTML/CSS/JS training)
 
-**Version:** 0.0.1  
+**Version:** 0.0.2
 **Author:** [StamosArchontis](https://github.com/StamosArhon)  
 **License:** MIT
 
@@ -40,10 +40,14 @@ The project is cleanly structured with separated concerns for easy understanding
 
 - 🎮 **Two-player mode** (Player 1 vs Player 2)
 - ✖️⭕ **Dynamic board filling** with X and O
-- 🔄 **Restart button** to reset the game
+- 🔄 **Restart Game** button to reset board and scores
+- 🔁 **Reset Board** button to clear board without affecting scores
 - 🔥 **Active player highlighting**
+- 🧠 **Win detection** logic (8 possible winning combinations)
+- 💯 **Score tracking** for each player
+- 🏆 **High score tracking** persists until full reset
 - 💎 **Modern, colorful UI** (hand-crafted CSS)
-- 🧹 **Clear board** on restart
+- 🧹 **Clear board** after each round
 - 🎯 **Switch players** automatically after each move
 
 ---
@@ -80,7 +84,6 @@ git clone https://github.com/StamosArhon/tictactoe-game-js-training.git
 
 ## 📋 Known Limitations
 
-- No win detection (game doesn't currently check for win/tie yet).
 - Players can overwrite each other's moves if the button is not properly locked after clicking (currently partially handled).
 - Mobile responsiveness can be improved (future enhancement).
 
@@ -88,19 +91,19 @@ git clone https://github.com/StamosArhon/tictactoe-game-js-training.git
 
 ## 🛣️ Planned Improvements
 
-- [ ] Add win/tie detection logic.
 - [ ] Improve mobile responsiveness (media queries).
 - [ ] Add winning animations.
 - [ ] Add a move counter and timer.
 - [ ] Track score history between rounds.
+- [ ] Add sound effects and accessibility improvements.
 
 ---
 
 ## 📜 Version History
 
-| Version | Date       | Changes/Notes                                                                                                          |
-| :------ | :--------- | :--------------------------------------------------------------------------------------------------------------------- |
-| 0.0.1   | April 2025 | Initial version. Basic player switching, dynamic board filling, restart functionality, basic layout styling completed. |
+| Version | Date       | Changes/Notes                                                                                                                                                                                                                                                                                                                      |
+| :------ | :--------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0.0.1   | April 2025 | Initial version. Basic player switching, dynamic board filling, restart functionality, basic layout styling completed. <br> ➕ Added win detection logic and player score tracking. <br> ➕ Added high score tracking per player. <br> ➕ Added **Reset Board** button to clear the board without clearing current or high scores. |
 
 ---
 
