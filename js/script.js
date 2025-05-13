@@ -74,6 +74,12 @@ const ticTacToeFill = boardButtons.forEach((button) => {
           .classList.add("player--winner");
 
         currentScore[activePlayer] += 1;
+        document
+          .querySelector(".winning-overlay")
+          .classList.add("show-winning-overlay");
+        document.querySelector(".winner-banner").textContent = `Player ${
+          activePlayer + 1
+        } wins!`;
 
         if (currentScore[activePlayer] > highScore[activePlayer]) {
           highScore[activePlayer] = currentScore[activePlayer];
@@ -125,12 +131,20 @@ const resetBoard = function () {
 
 //====== Reset the game for the next round ======//
 
-document
-  .querySelector(".reset-board-btn")
-  .addEventListener("click", resetBoard);
+document.querySelector(".reset-board-btn").addEventListener("click", () => {
+  document
+    .querySelector(".winning-overlay")
+    .classList.remove("show-winning-overlay");
+  resetBoard();
+});
 
 //====== Restart the game and clear scores ======//
 
 const restartGame = document
   .querySelector(".restart-game-btn")
-  .addEventListener("click", init);
+  .addEventListener("click", () => {
+    document
+      .querySelector(".winning-overlay")
+      .classList.remove("show-winning-overlay");
+    init();
+  });

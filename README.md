@@ -1,6 +1,6 @@
 # The TicTacToe Game (HTML/CSS/JS training)
 
-**Version:** 0.0.2
+**Version:** 0.0.3  
 **Author:** [StamosArchontis](https://github.com/StamosArhon)  
 **License:** MIT
 
@@ -40,15 +40,14 @@ The project is cleanly structured with separated concerns for easy understanding
 
 - 🎮 **Two-player mode** (Player 1 vs Player 2)
 - ✖️⭕ **Dynamic board filling** with X and O
-- 🔄 **Restart Game** button to reset board and scores
-- 🔁 **Reset Board** button to clear board without affecting scores
-- 🔥 **Active player highlighting**
+- 🔄 **Restart Game** and 🔁 **Reset Board** buttons now appear **only after a round is won**, as part of a winning overlay
 - 🧠 **Win detection** logic (8 possible winning combinations)
-- 💯 **Score tracking** for each player
-- 🏆 **High score tracking** persists until full reset
+- 🏆 **Current score** and **high score tracking** per player
+- 🔥 **Active player highlighting**
 - 💎 **Modern, colorful UI** (hand-crafted CSS)
-- 🧹 **Clear board** after each round
-- 🎯 **Switch players** automatically after each move
+- 🧹 **Board resets cleanly after each round**
+- 🎯 **Automatic player switching after each move**
+- 🪟 **Winning overlay display** with player win message and post-round controls
 
 ---
 
@@ -104,6 +103,7 @@ git clone https://github.com/StamosArhon/tictactoe-game-js-training.git
 | Version | Date       | Changes/Notes                                                                                                                                                                                                                                                                                                                      |
 | :------ | :--------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 0.0.1   | April 2025 | Initial version. Basic player switching, dynamic board filling, restart functionality, basic layout styling completed. <br> ➕ Added win detection logic and player score tracking. <br> ➕ Added high score tracking per player. <br> ➕ Added **Reset Board** button to clear the board without clearing current or high scores. |
+| 0.0.3   | May 2025   | ➕ Added **winning overlay** that appears when a player wins a round. <br> ➕ Moved **Restart Game** and **Reset Board** buttons into the overlay UI, so they only appear after a win. <br> ✅ Improved game clarity and UI flow for round transitions.                                                                            |
 
 ---
 
